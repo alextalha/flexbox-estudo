@@ -1,0 +1,3 @@
+baixar o plugin live server
+
+display flex alinham sempre horizontalmente 

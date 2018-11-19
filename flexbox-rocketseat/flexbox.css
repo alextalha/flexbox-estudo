@@ -1,0 +1,25 @@
+
+html, body, #app{
+    height: 100%;
+    /*  margin:0;*/
+    margin: 0;
+    display:flex;
+    /*flex-direction: row; /* seguir o padrão em linha e isso é default */
+    /*flex-direction: column; /* disposicao em coluna */
+    /* flex-direction : column-reverse; */
+    flex-direction : row;
+    /*align-items: flex-start ; /* aninha verticalmente x*/
+    /*justify-content: flex-start ; /* aninha horizontalmente y */
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; coloca espaço iguais entre os elementos 
+    /* justify-content: space-around; similar o space between porém coloca um pouco de espaço entre as bordas */
+    
+}
+
+.box{
+    width: 60px;
+    height: 60px;
+    background: #f00;
+    margin:5px;
+}
