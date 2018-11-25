@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document22222</title>
+</head>
+
+<script>
+
+
+    console.log('================================Exercicio 1');
+
+    //exercicio 1
+    var endereco = {
+        rua: 'Rua dos pinheiros',
+        numero: 1293,
+        bairro: 'Centro',
+        cidade: 'São Paulo',
+        uf: 'SP'
+    };
+
+    var retornaMensagem = (endereco) => console.log(`O usuario mora em ${endereco.cidade} / ${endereco.uf},  no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº  ${endereco.numero}`)
+    retornaMensagem(endereco);
+
+
+    //exercicio 2
+    console.log('================================Exercicio 2');
+    rangePar = (x, y) => {
+        var valor = "";
+        while (x <= y) {
+
+            valor = (x % 2 == 0) ? "Par" : "Impar";
+            console.log(`x = ${x} | ${valor} `);
+            x++;
+        }
+    }
+
+    rangePar(0, 5);
+
+
+    var skills = ['Java', 'Javascript', 'PHP', 'Node']
+    //exercicio 3
+    console.log('================================Exercicio 3');
+
+
+    var temHabiidades = (skills) => {
+        return ((skills.join().indexOf("Javascript")) == "-1") ? "false" : 'true';
+    }
+
+    console.log(temHabiidades(skills));
+
+
+
+    //exercicio 4
+    console.log('================================Exercicio 4');
+
+    function experiencia(anosEstudo) {
+        //   console.log(anosEstudo);
+        anosEstudo = parseInt(anosEstudo);
+        var mensagem = "";
+
+        if (anosEstudo > 0 && anosEstudo <= 1) {
+            mensagem = "Iniciante";
+        } else if (anosEstudo > 1 && anosEstudo <= 3) {
+            mensagem = 'Intermediário';
+        } else if (anosEstudo > 3 && anosEstudo <= 6) {
+            mensagem = 'Avançado';
+        } else if (anosEstudo > 7) {
+            mensagem = 'Jedi Master';
+        } else {
+            mensagem = "Não tem";
+        }
+        console.log(mensagem);
+    }
+
+    experiencia(2);
+
+
+    //exercicio 5
+    console.log('================================Exercicio 5');
+
+
+    function printaMensagem() {
+        var usuarios = [
+            {
+                nome: 'Diego',
+                habilidades: ['Javascript', 'ReactJS', 'Redux']
+            },
+            {
+                nome: 'Gabriel',
+                habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+            }
+        ];
+
+        for(i = 0; i < usuarios.length; i++){
+            
+            console.log(`O ${usuarios[i].nome} possui as habilidades ${usuarios[i].habilidades.join(' ')}` );
+        }
+
+    }
+
+    printaMensagem();
+
+
+     //exercicio 6
+     //Em uma página crie uma função que dado um número de minutos crie um countdown em tempo real (de segundo a segundo) até chegar em zero no formato 08:30:20, por exemplo:
+     console.log('================================Exercicio 6');
+
+    function countdown(minutos,seconds){
+        var hour = Math.floor(minutos/60);
+        var minutes = minutos % 60;    
+        
+        if(seconds == 0 ){
+            if(minutes > 0 ){
+                 if(hour > -1 ){
+
+                }else{
+                    hour-=hour;
+                }
+            }else{
+                console.log('entrando aqui');
+
+                minutes-=1;
+            }
+        }else{
+             
+        }
+
+        console.log(`${hour}:${minutes}:${seconds}`);
+    }
+
+      //  var minutos = 10;
+      //  var seconds = 60;
+      //  setInterval(function(){ 
+      //      countdown(minutos,(seconds < 0) ? 60 : seconds = seconds-1)
+      //
+      //   }, 1000);
+
+        
+        
+
+</script>
+
+<body>
+
+</body>
+
+</html>
